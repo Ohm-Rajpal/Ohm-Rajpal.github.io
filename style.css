@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(-45deg, #ADD8E6, #B0E0E6, #87CEEB, #B0C4DE);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    color: #333;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    margin-top: 30px;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: #4903b6;
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0056b3;
+}
+
+.fs-4 {
+    font-weight: bold;
+    color: #333;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.form-group-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-right {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    grid-column: span 2; /* Span across both columns */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#response-message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #28a745;
+}
+
+
+/*html {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+
+/*body {*/
+/*    background: linear-gradient(-45deg, #ADD8E6, #B0E0E6, #87CEEB, #B0C4DE);*/
+/*    background-size: 400% 400%;*/
+/*    animation: gradient 15s ease infinite;*/
+/*    height: 100vh;*/
+/*    color: #333;*/
+/*}*/
+
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*}*/
+
+/*header {*/
+/*    margin-top: 30px;*/
+/*    background-color: rgba(173, 216, 230, 0.5);*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.nav-link {*/
+/*    color: #4903b6;*/
+/*    transition: color 0.2s;*/
+/*}*/
+
+/*.nav-link:hover, .nav-link.active {*/
+/*    color: #0056b3;*/
+/*}*/
+
+/*.fs-4 {*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*}*/
+
+/*!* New addition for the contact form *!*/
+/*.container {*/
+/*    padding: 3rem 2rem;*/
+/*    background-color: rgba(255, 255, 255, 0.8); !* Semi-transparent white background *!*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); !* Subtle shadow effect *!*/
+/*}*/
